@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+/*----------------loading logo ----------*/
+.loading {
+  overflow: hidden;
+}
+.beforewrapper {
+  background: #202020;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+.afterwrapper {
+  height: 0;
+  transition: all 1s;
+}
+.svg {
+  width: 40%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.svg1 {
+  display: none;
+}
+/*----------------loading logo ----------*/
+/*----------------header ----------------*/
+#header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(48, 49, 51, 1);
+}
+.stickyheader {
+  z-index: 999;
+}
+.hiddenheader {
+  z-index: -1;
+  transition-delay: 1s;
+}
+header {
+  position: relative;
+  height: 100px;
+  margin: 0 10%;
+  transition: all 1s ease-out;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 90px;
+  transition: all 1s;
+}
+.logo:hover {
+  transform: rotateY(360deg);
+}
+header a.menu-button {
+  /* 
+  margin-top: 10px; */
+  cursor: pointer;
+  position: absolute;
+}
+header a ul li {
+  list-style-type: none;
+  letter-spacing: 2em;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+header span {
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  background: #fff;
+  border-radius: 3px;
+  bottom: 0px;
+  left: 54px;
+}
+
+/*----------------header -----------------*/
+
+/*----------------SideMENU -----------------*/
+#sidemenu {
+  position: sticky;
+  top: 0;
+}
+.sidemenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; /* 
+  ; */
+}
+/*----------------Sidemenu effect -----------------*/
+#mySidenavEffect {
+  background-color: #39454b;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+.beforesidenaveffect {
+  transition: all 1s;
+  width: 0;
+}
+.sidenaveffect {
+  transition: all 0.5s;
+  width: 100vw;
+}
+#mySidenavEffect1 {
+  background-color: #202020;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+.beforesidenaveffect1 {
+  width: 0;
+  transition: all 0.7s;
+}
+.sidenaveffect1 {
+  width: 100vw;
+  transition: all 0.8s;
+}
+.sidenaveffect1 .sidenaveffect1right {
+  grid-column: 2/3;
+  margin: 15% 10% 15% 0;
+  background: url(../img/sidenaveffect1.jpg) center/cover no-repeat;
+  animation: zoomin 30s 1;
+  width: 80%;
+}
+#mySidenavEffect2 {
+  background-color: #c59d5f;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 3;
+  transition-delay: 0.2s;
+  overflow: hidden;
+}
+.beforesidenaveffect2 {
+  width: 0;
+  transition: all 0.2s;
+}
+.sidenaveffect2 {
+  width: 50vw;
+  transition: all 0.3s;
+}
+@keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-delay: 1s;
+}
+/*----------------Sidemenu effect -----------------*/
+/*----------------Sidemenu content -----------------*/
+#mySidenav {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.beforesidenav {
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+}
+.sidenav {
+  z-index: 4;
+  opacity: 1; /* 
+  width: 100vw; */
+}
+#mySidenav ul {
+  position: absolute;
+  left: 100px;
+}
+#mySidenav ul li {
+  list-style-type: none;
+  padding: 20px 15%;
+}
+#mySidenav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  display: inline-block;
+}
+#mySidenav ul li a:nth-child(1) {
+  font-size: 4em;
+}
+#mySidenav ul li a.effect-underline:after {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+#mySidenav ul li a.effect-underline:hover:after {
+  width: 50%;
+}
+/*----------------Sidemenu content -----------------*/
+/*----------------SideMENU -------------------*/
+/*----------------Home -------------------*/
+#home {
+  height: 90vh;
+  position: relative;
+  background: url(http://pitchcardiff.com/wp-content/uploads/2018/10/5D3_2546.jpg)
+    center/cover no-repeat;
+}
+.homeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bgholder {
+  border-radius: 50%;
+  background: url(../img/bg-home.jpg) center no-repeat;
+  padding: 20px;
+}
+#svghome {
+  margin: 10px;
+  width: 400px;
+  height: 380px;
+  transition: all 1s;
+}
+#home a {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+i {
+  font-size: 5em;
+  color: #c59d5f; /* #bfa761; */
+  animation: bounce 2s infinite;
+}
+/*----------------Home ------------------------*/
+/*----------------ABOUT ------------------------*/
+/* #about {
+  height: 60vh;
+} */
+.about {
+  position: relative;
+  width: 100%;
+  color: #000;
+  background: url("http://www.jamesarc.com/work/steakville/assets/img/about-bg.jpg")
+    no-repeat center;
+  background-size: cover;
+  background-position: center top;
+  background-color: #fff;
+  padding-top: 80px;
+}
+.aboutimage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.aboutimage img {
+  width: 80%;
+  max-width: 400px;
+  height: 100%;
+}
+.abouttext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.abouttext p {
+  text-align: center;
+  padding: 0 20%;
+}
+/*----------------about------------------------*/
+/*----------------mediaQueris -----------------*/
+@media (max-width: 1024px) {
+  .svg {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .svg {
+    width: 80%;
+  }
+  header {
+    margin: 0 5% 0 1%;
+  }
+  header a ul {
+    margin-top: 0;
+  }
+  .logo {
+    right: 5px;
+    height: 70px;
+  }
+  .bgholder {
+    padding: 0;
+  }
+  #svghome {
+    width: 290px;
+    height: 280px;
+  }
+  #mySidenav ul {
+    left: 0;
+  }
+  #mySidenav ul li {
+    padding: 10px 5%;
+  }
+}
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    transform: translate3d(0, 30px, 0);
+  }
+
+  40%,
+  43% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 30px, 0);
+  }
+}
