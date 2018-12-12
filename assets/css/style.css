@@ -10,7 +10,7 @@ body {
   overflow: hidden;
 }
 .beforewrapper {
-  background: #202020;
+  background: rgba(48, 49, 51, 1);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -57,14 +57,14 @@ header {
 }
 .logo {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10px;
-  height: 90px;
+  height: 60px;
   transition: all 1s;
 }
-.logo:hover {
+/* .logo:hover {
   transform: rotateY(360deg);
-}
+} */
 header a.menu-button {
   /* 
   margin-top: 10px; */
@@ -76,13 +76,13 @@ header a ul li {
   letter-spacing: 2em;
   padding-top: 10px;
   font-weight: bold;
-  color: #fff;
+  color: #b09a4f;
 }
 header span {
   width: 33px;
   height: 4px;
   position: absolute;
-  background: #fff;
+  background: #b09a4f;
   border-radius: 3px;
   bottom: 0px;
   left: 54px;
@@ -145,7 +145,7 @@ header span {
   width: 80%;
 }
 #mySidenavEffect2 {
-  background-color: #c59d5f;
+  background-color: #b09a4f;
   position: absolute;
   top: 0;
   height: 100vh;
@@ -273,7 +273,7 @@ header span {
 }
 i {
   font-size: 5em;
-  color: #c59d5f; /* #bfa761; */
+  color: #b09a4f; /* #bfa761; */
   animation: bounce 2s infinite;
 }
 /*----------------Home ------------------------*/
@@ -332,7 +332,7 @@ i {
   }
   .logo {
     right: 5px;
-    height: 70px;
+    height: 40px;
   }
   .bgholder {
     padding: 0;
