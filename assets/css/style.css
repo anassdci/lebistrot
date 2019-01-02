@@ -290,10 +290,10 @@ i {
   position: relative;
   width: 100%;
   color: #000;
-  background: url("http://www.jamesarc.com/work/steakville/assets/img/about-bg.jpg")
+  /* background: url("http://www.jamesarc.com/work/steakville/assets/img/about-bg.jpg")
     no-repeat center;
   background-size: cover;
-  background-position: center top;
+  background-position: center top; */
   background-color: #fff;
   padding-top: 80px;
 }
