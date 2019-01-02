@@ -60,3 +60,12 @@ function closeNav() {
     .removeClass("sidenav")
     .addClass("beforesidenav");
 }
+$(".fullBackground").fullClip({
+  images: [
+    "http://pitchcardiff.com/wp-content/uploads/2018/10/5D3_2546.jpg",
+    "http://pitchcardiff.com/wp-content/uploads/2018/10/Asset-16.jpg",
+    "http://pitchcardiff.com/wp-content/uploads/2018/03/Asset-7@330x-100-e1538505839244-uai-1600x800.jpg"
+  ],
+  transitionTime: 2000,
+  wait: 10000
+});

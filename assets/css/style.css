@@ -140,7 +140,8 @@ header span {
 .sidenaveffect1 .sidenaveffect1right {
   grid-column: 2/3;
   margin: 15% 10% 15% 0;
-  background: url(../img/sidenaveffect1.jpg) center/cover no-repeat;
+  background: url(http://happenpappen.de/wp-content/uploads/2017/06/hintergrund-home_happenpappen.jpg)
+    center/cover no-repeat;
   animation: zoomin 30s 1;
   width: 80%;
 }
@@ -240,11 +241,15 @@ header span {
 /*----------------Sidemenu content -----------------*/
 /*----------------SideMENU -------------------*/
 /*----------------Home -------------------*/
-#home {
+.fullBackground {
   height: 90vh;
   position: relative;
-  background: url(http://pitchcardiff.com/wp-content/uploads/2018/10/5D3_2546.jpg)
+  /* background: url(http://pitchcardiff.com/wp-content/uploads/2018/10/5D3_2546.jpg)
     center/cover no-repeat;
+    background-attachment: fixed; */
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .homeholder {
   position: absolute;
@@ -314,6 +319,35 @@ i {
   padding: 0 20%;
 }
 /*----------------about------------------------*/
+/*----------------MENU------------------------*/
+
+#menu {
+  background: url(https://boheme-schwabing.de/wp-content/uploads/2018/07/muc_1807_laboheme_vorstellung_steak_1-2048x1365.jpg)
+    center/cover no-repeat;
+}
+.menuparallax-effect {
+  /*   background-color: rgba(94, 148, 255, 0.9); */
+  margin-top: 40px;
+  padding-top: 100px;
+}
+.menuparallax h2:nth-child(1) {
+  /* position: absolute; */
+  text-align: center;
+  font-size: 5em;
+  font-family: "Herr Von Muellerhoff", cursive;
+  color: #b09a4f;
+  font-weight: 500;
+  z-index: 10;
+  margin-bottom: 0;
+}
+.menuparallax h2:nth-child(2) {
+  /* position: absolute; */
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-bottom: 100px;
+}
+/*----------------menu------------------------*/
 /*----------------mediaQueris -----------------*/
 @media (max-width: 1024px) {
   .svg {
